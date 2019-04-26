@@ -38,7 +38,7 @@ function install {
     ln -snf $USR_LOCAL_INC/gtest/libgtest_main.a /usr/local/lib/libgtest_main.a
 
     mkdir $GMOCK_DIR
-	cp ../lib/libgmock.a ../lib/libgmock_main.a $GMOCK_DIR
+    cp ../lib/libgmock.a ../lib/libgmock_main.a $GMOCK_DIR
     cp -r ../googlemock/include/gmock/  $GMOCK_DIR
     ln -snf $GMOCK_DIR $USR_LOCAL_INC/gmock
     ln -snf $USR_LOCAL_INC/gmock/libgmock.a /usr/local/lib/libgmock.a
