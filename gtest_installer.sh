@@ -31,14 +31,14 @@ function install {
 
     mkdir $GTEST_DIR
 
-    cp ../lib/libgtest.a ../lib/libgtest_main.a $GTEST_DIR
+    cp googlemock/gtest/*.a $GTEST_DIR
     cp -r ../googletest/include/gtest/  $GTEST_DIR
     ln -snf $GTEST_DIR $USR_LOCAL_INC/gtest
     ln -snf $USR_LOCAL_INC/gtest/libgtest.a /usr/local/lib/libgtest.a
     ln -snf $USR_LOCAL_INC/gtest/libgtest_main.a /usr/local/lib/libgtest_main.a
 
     mkdir $GMOCK_DIR
-    cp ../lib/libgmock.a ../lib/libgmock_main.a $GMOCK_DIR
+    cp googlemock/*.a   $GMOCK_DIR
     cp -r ../googlemock/include/gmock/  $GMOCK_DIR
     ln -snf $GMOCK_DIR $USR_LOCAL_INC/gmock
     ln -snf $USR_LOCAL_INC/gmock/libgmock.a /usr/local/lib/libgmock.a
